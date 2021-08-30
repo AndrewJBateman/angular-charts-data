@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-const apiKey = 'coinranking3157b7e141b549e4367c4ed4d9210c1c6f128bb9bd33c84a';
+const apiKey = 'YOUR API kEY HERE';
 
 const httpOptions = {
   headers: new HttpHeaders({

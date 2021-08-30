@@ -1,6 +1,6 @@
 # :zap: Angular Charts Data
 
-* Angular 12 app using [Chart.js](https://www.chartjs.org/) to display [Free Coinranking API](https://developers.coinranking.com/api/documentation) data
+* Angular 12 app using [Chart.js](https://www.chartjs.org/) to display [free Coinranking API](https://developers.coinranking.com/api/documentation) data
 * Tutorial code from [The Code Angle](https://www.youtube.com/channel/UChi_aILZkMMx8_KlVAsbI7g) with additional chart and some other code changes
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
