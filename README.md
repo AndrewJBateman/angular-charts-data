@@ -1,6 +1,6 @@
 # :zap: Angular Charts Data
 
-* Angular 12 app using [Chart.js](https://www.chartjs.org/) to display [Free Coinranking API](https://developers.coinranking.com/api/documentation) data
+* Angular app using [Chart.js](https://www.chartjs.org/) to display [free Coinranking API](https://developers.coinranking.com/api/documentation) data
 * Tutorial code from [The Code Angle](https://www.youtube.com/channel/UChi_aILZkMMx8_KlVAsbI7g) with additional chart and some other code changes
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
@@ -36,8 +36,8 @@
 
 ## :signal_strength: Technologies
 
-* [Angular framework v12](https://angular.io/)
-* [Charts.js v3](https://www.chartjs.org/docs/latest/)
+* [Angular framework v13](https://angular.io/)
+* [Charts.js v3](https://www.chartjs.org/docs/latest/) - latest version 3.6 resolves Canvas Rendering Error (see StackOverflow answer in Inspirartoin below)
 * [Coinranking API v2](https://developers.coinranking.com/api/documentation) for free cryptocurrency data
 * [CORS anywhere](https://cors-anywhere.herokuapp.com/) to get round Cross-Origin limitations with localhost
 
@@ -83,6 +83,7 @@ this.chart2 = new Chart('canvas2', {
 ## :clap: Inspiration
 
 * [The Code Angle, How to Integrate Chart.js Using Angular 12 with Data from a REST API (2021)](https://www.youtube.com/watch?v=WCI4yvrzFwc)
+* [Angular Chartjs error TS2304: Cannot find name OffscreenCanvasRenderingContext2D](https://stackoverflow.com/questions/68209426/angular-chartjs-error-ts2304-cannot-find-name-offscreencanvasrenderingcontext2d)
 
 ## :file_folder: License
 
