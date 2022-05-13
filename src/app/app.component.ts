@@ -23,7 +23,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.authService.cryptoData().then((res) => {
+    this.authService.cryptoData().then((res: any) => {
       this.result = res;
       this.coinPrice = this.result.data.coins.map((coins: any) => coins.price);
       this.coinName = this.result.data.coins.map((coins: any) => coins.name);

@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { lastValueFrom } from 'rxjs';
 
 const apiKey = 'YOUR API kEY HERE';
 
@@ -17,20 +18,17 @@ const httpOptions = {
 export class AuthService {
   private baseUrl = 'https://api.coinranking.com/v2/coins';
   private proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+  cryptoDataValues: any;
 
   constructor(private http: HttpClient) { }
 
-  cryptoData() {
+  public async cryptoData() {
     const url = `${this.proxyUrl}${this.baseUrl}`;
 
-    const cryptoData = this.http
-      .get(url, httpOptions)
-      .toPromise()
-      .then((data) => {
-        return data;
-      });
-    console.log('data: ', cryptoData);
-    return cryptoData;
+    const cryptoData$ = this.http.get(url, httpOptions);
+    this.cryptoDataValues = await lastValueFrom(cryptoData$);
+    console.log('values: ', this.cryptoDataValues);
+    return this.cryptoDataValues;
   }
 
 }
