@@ -37,7 +37,8 @@
 ## :signal_strength: Technologies
 
 * [Angular framework v13](https://angular.io/)
-* [Charts.js v3](https://www.chartjs.org/docs/latest/) - latest version 3.6 resolves Canvas Rendering Error (see StackOverflow answer in Inspirartoin below)
+* [RxJS v7](https://rxjs.dev/) Reactive Extensions Library for JavaScript
+* [Chart.js v3](https://www.chartjs.org/docs/latest/) - latest version 3.6 resolves Canvas Rendering Error (see StackOverflow answer in Inspiration below)
 * [Coinranking API v2](https://developers.coinranking.com/api/documentation) for free cryptocurrency data
 * [CORS anywhere](https://cors-anywhere.herokuapp.com/) to get round Cross-Origin limitations with localhost
 
@@ -46,6 +47,7 @@
 * Run `npm i` to install dependencies
 * Create an account & get a Developers API key from [Coinranking](https://developers.coinranking.com/)
 * Add API key to `services\authService`
+* Enables temporary CORS issue workaround via `https://cors-anywhere.herokuapp.com/corsdemo`
 * Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 * Run 'ng build' to create a build file
 
