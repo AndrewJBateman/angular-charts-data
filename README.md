@@ -36,7 +36,7 @@
 
 ## :signal_strength: Technologies
 
-* [Angular framework v13](https://angular.io/)
+* [Angular framework v14 rc-1](https://angular.io/)
 * [RxJS v7](https://rxjs.dev/) Reactive Extensions Library for JavaScript
 * [Chart.js v3](https://www.chartjs.org/docs/latest/) - latest version 3.6 resolves Canvas Rendering Error (see StackOverflow answer in Inspiration below)
 * [Coinranking API v2](https://developers.coinranking.com/api/documentation) for free cryptocurrency data
