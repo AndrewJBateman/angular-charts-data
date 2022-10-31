@@ -1,7 +1,7 @@
 # :zap: Angular Charts Data
 
 * Angular app using [Chart.js](https://www.chartjs.org/) to display [free Coinranking API](https://developers.coinranking.com/api/documentation) data
-* Tutorial code from [The Code Angle](https://www.youtube.com/channel/UChi_aILZkMMx8_KlVAsbI7g) with additional chart and some other code changes
+* Tutorial code from [The Code Angle](https://www.youtube.com/channel/UChi_aILZkMMx8_KlVAsbI7g) with additional chart, pan/zoom and some other code changes
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/angular-charts-data?style=plastic)
@@ -11,7 +11,7 @@
 
 ## :page_facing_up: Table of contents
 
-* [Angular charts Data](#angular-charts-data)
+* [:zap: Angular Charts Data](#zap-angular-charts-data)
   * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
   * [:books: General info](#books-general-info)
   * [:camera: Screenshots](#camera-screenshots)
@@ -39,6 +39,7 @@
 * [Angular framework v14 rc-1](https://angular.io/)
 * [RxJS v7](https://rxjs.dev/) Reactive Extensions Library for JavaScript
 * [Chart.js v3](https://www.chartjs.org/docs/latest/) - latest version 3.6 resolves Canvas Rendering Error (see StackOverflow answer in Inspiration below)
+* [chartjs-plugin-zoom v1](https://www.npmjs.com/package/chartjs-plugin-zoom) zoom and pan plugin for Chart.js >= 3.0.0
 * [Coinranking API v2](https://developers.coinranking.com/api/documentation) for free cryptocurrency data
 * [CORS anywhere](https://cors-anywhere.herokuapp.com/) to get round Cross-Origin limitations with localhost
 

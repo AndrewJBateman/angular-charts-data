@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 // import Chart and all chart types (tree-shakeable)
 import { Chart, registerables } from 'chart.js';
+import zoomPlugin from 'chartjs-plugin-zoom';
+Chart.register(zoomPlugin);
 
 import { AuthService } from './services/auth.service';
 
@@ -41,8 +43,25 @@ export class AppComponent implements OnInit {
               backgroundColor: 'rgba(93, 175, 89, 0.1)',
               borderWidth: 1
             },
-          ],
+          ]
         },
+
+        options: {
+          aspectRatio: 3,
+          plugins: {
+            zoom: {
+              zoom: {
+                wheel: {
+                  enabled: true,
+                },
+                pinch: {
+                  enabled: true
+                },
+                mode: 'xy',
+              }
+            }
+          }
+        }
       });
 
       this.chart2 = new Chart('canvas2', {
@@ -59,6 +78,22 @@ export class AppComponent implements OnInit {
             },
           ],
         },
+        options: {
+          aspectRatio: 3,
+          plugins: {
+            zoom: {
+              zoom: {
+                wheel: {
+                  enabled: true,
+                },
+                pinch: {
+                  enabled: true
+                },
+                mode: 'xy',
+              }
+            }
+          }
+        }
       });
     });
   }
